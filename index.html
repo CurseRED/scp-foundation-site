@@ -7,37 +7,62 @@
 </head>
 <body>
 	<header>
-		<div class="logo">
-			<img class="logo-image" src="images/logo.png" alt="Logo">
-			<div class="sitename">
-				<p class="top-sitename">The SCP Foundation</p>
-				<p class="bottom-sitename">Russian branch</p>
+		<div id="header-logo">
+			<div id="logo">
+				<img id="logo-image" src="images/logo.png" alt="Logo">
+				<div id="logo-sitename">
+					<p id="top-sitename">The SCP Foundation</p>
+					<p id="bottom-sitename">Russian branch</p>
+				</div>
 			</div>
+			<form id="login-form" action="/#" method="post">
+				<div class="field">
+					<label for="flogin">Логин или E-mail:</label>
+					<input type="text" name="flogin" placeholder="Логин или E-mail">
+				</div>
+				<div class="field">
+					<label for="fpassword">Пароль:</label>
+					<input type="password" id="password" name="fpassword" placeholder="Пароль">
+				</div>
+				<div class="field-last">
+					<a class="navigation" href="/#">Забыли пароль?</a>
+					<input type="submit" value="Вход">
+				</div>
+			</form>
 		</div>
-		<form id="login" action="/#" method="post">
-			<fieldset>
-				<legend>Вход:</legend>
-				<label for="flogin">Логин или E-mail:</label>
-				<input type="text" name="flogin"><br>
-				<label for="fpassword">Пароль:</label>
-				<input type="password" id="password" name="fpassword"><br>
-				<input type="submit" value="Вход">
-			</fieldset>
-		</form>
 		<nav>
 			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="objects.html">Объекты</a></li>
-				<li><a href="submit.html">Предложить статью</a></li>
-				<li><a href="about.html">О фонде</a></li>
+				<li><a class="navigation" href="index.html">Главная</a></li>
+				<li><a class="navigation" href="objects.html">Объекты</a></li>
+				<li><a class="navigation" href="submit.html">Предложить статью</a></li>
+				<li><a class="navigation" href="about.html">О фонде</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
+		<p id="warning">Далее представлены материалы различной степени секретности. Ведётся наблюдение, нарушения режима секретности отслеживаются и караются. Других предупреждений не будет.</p>
+		<div class="article">
+			<h2>SCP-173 — Скульптура</h2>
+			<div class="object-number">
+				<p><b>Объект №: </b>SCP-173</p>
+			</div>
+			<div class="object-class">
+				<p><b>Класс объекта: </b>Евклид</p>
+			</div>
+			<div class="object-conditions">
+				<p><b>Особые условия содержания: </b>Объект SCP-173 должен постоянно храниться в закрытом контейнере. При посещении персоналом контейнера с SCP-173 в контейнер должно входить не менее трёх человек, и дверь должна быть немедленно заперта за ними. Два лица должны постоянно поддерживать прямой зрительный контакт с SCP-173 до тех пор, пока все сотрудники не покинут контейнер, и он не будет заперт.</p>
+			</div>
+			<div class="object-description">
+				<p><b>Описание: </b>Привезён в Зону 19 в 1993. Происхождение всё ещё неизвестно. Изготовлен из бетона и арматуры со следами аэрозольной краски марки Krylon. SCP-173 одушевлён и крайне враждебен. Объект не может двигаться в то время, когда находится в пределах прямой видимости. При работе с SCP-173 никогда не должен быть нарушен зрительный контакт. Персонал, предназначенный для входа в контейнер, проинструктирован предупреждать друг друга перед тем, как моргнуть. Объект, как сообщается, нападает, ломая шею у основания черепа, или с помощью удушения. В случае нападения персонал должен применять действия по сдерживанию опасных объектов класса 4.
 
+Персонал докладывает о скрежете, доносящемся из контейнера, когда никто не присутствует внутри. Это считается нормальным, и о любых изменениях в этом поведении должно быть немедленно доложено действующему куратору HMCL.
+
+Красновато-коричневая субстанция на полу представляет собой смесь фекалий и крови. Происхождение этих веществ неизвестно. Корпуса должны очищаться раз в две недели.</p>
+			</div>
+		</div>
 	</main>
 	<footer>
-
+		<p>Пока не указано иное, содержимое этой страницы распространяется по лицензии Creative Commons Attribution-ShareAlike 3.0 License</p>
 	</footer>
 </body>
 </html>

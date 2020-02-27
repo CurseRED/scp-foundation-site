@@ -1,46 +1,16 @@
 body {
 	font-family: verdana, arial, helvetica;
 	background-color: #fff;
+	margin: 0px;
 }
 
-header {
-	display: flex;
-	flex-direction: row;
-	padding: 16px;
-}
-
-.logo {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 256px;
-}
-
-.sitename {
-	display: flex;
-	flex-direction: column;
-}
-
-.logo-image {
-	float: left;
-	height: 64px;
-	width: 64px;
-	margin: 8px;
-}
-
-#login {
-	float: right;
-	width: 256px;
-}
-
-ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+p {
 	margin: 0;
-	padding: 0;
-	list-style-type: none;
+}
+
+h2 {
+	margin: 0;
+	color: #b01;
 }
 
 a:link, a:visited {
@@ -53,4 +23,119 @@ a:hover, a:active {
 	color: #b01;
 	background-color: transparent;
 	text-decoration: underline;
+}
+
+#logo-image {
+	height: 100%;
+	padding-right: 16px;
+}
+
+#logo-sitename {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+}
+
+#logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 64px;
+}
+
+#header-logo {
+	background-image: linear-gradient(black, brown);
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 32px 128px;
+	flex-wrap: wrap;
+}
+
+#top-sitename {
+	font-size: 24px;
+}
+
+#bottom-sitename {
+	font-size: 12px;
+}
+
+nav {
+	background-image: linear-gradient(grey, black);
+}
+
+ul {
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto;
+	list-style-type: none;
+	max-width: 512px;
+	color: white;
+	flex-wrap: wrap;
+}
+
+a.navigation {
+	color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	max-width: 80%;
+	padding: 0px 16px;
+}
+
+#warning {
+	text-align: center;
+	margin: 8px 8px 0px 8px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	background-color: black;
+	color: white;
+}
+
+#login-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	flex-wrap: nowrap;
+}
+
+.field {
+	margin-bottom: 16px;
+}
+
+.field-last {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.article {
+	border: solid 1px grey;
+	border-radius: 12px;
+	padding: 8px;
+	margin: 16px 0px;
+}
+
+.article > h2 {
+	margin: 4px;
+}
+
+.article > div {
+	margin: 4px;
+	font-size: 12px;
 }
