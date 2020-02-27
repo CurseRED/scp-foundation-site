@@ -1,0 +1,56 @@
+body {
+	font-family: verdana, arial, helvetica;
+	background-color: #fff;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	padding: 16px;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 256px;
+}
+
+.sitename {
+	display: flex;
+	flex-direction: column;
+}
+
+.logo-image {
+	float: left;
+	height: 64px;
+	width: 64px;
+	margin: 8px;
+}
+
+#login {
+	float: right;
+	width: 256px;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a:link, a:visited {
+	color: #b01;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #b01;
+	background-color: transparent;
+	text-decoration: underline;
+}
