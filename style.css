@@ -11,12 +11,14 @@ body {
 
 p {
 	margin: 0;
+	padding: 4px;
 }
 
 h1,
 h2,
 h3 {
-	margin: 8px 0;
+	margin: 0;
+	padding: 4px;
 	color: #b01;
 }
 
@@ -83,7 +85,7 @@ nav {
 }
 
 ul {
-	padding: 0;
+	padding: 2px 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -106,15 +108,11 @@ a.navigation {
 main {
 	display: flex;
 	flex-direction: column;
-	max-width: 1024px;
-	padding: 16px;
 	flex: 1;
-	margin: 0 auto;	
-}
-
-#warning {
-	text-align: center;
-	margin: 16px 16px 0px 16px;
+	margin: 8px;
+	padding: 0 16px;
+	align-items: center;
+	text-align: justify;
 }
 
 footer {
@@ -144,6 +142,10 @@ footer {
 	margin-bottom: 16px;
 }
 
+.field > label {
+	padding-right: 4px;
+}
+
 .field-last {
 	display: flex;
 	flex-direction: row;
@@ -151,25 +153,64 @@ footer {
 	width: 100%;
 }
 
-.article {
-	border: solid 1px grey;
+.block {
+	width: auto;
+	display: block;
+	flex-direction: column;
+	border: solid 1px brown;
 	border-radius: 12px;
-	box-shadow: 0 0 8px grey;	
+	box-shadow: 0 0 8px #c5c5c5;	
 	padding: 8px;
-	margin: 16px 16px;
+	margin: 8px 0;
+	flex-wrap: wrap;
+	max-width: 1024px;
+	width: 100%;
 }
 
-.article > h2 {
-	margin: 4px;
+.object-image-and-description {
+	display: flex;
+	float: right;
+	flex-direction: column;
+	border: solid 1px brown;
+	box-shadow: 0 0 8px #c5c5c5;
+	width: 320px;
+	margin: 0 16px 16px 16px;
+}	
+
+.object-image {
+	width: 100%;
 }
 
-.article > div {
-	margin: 4px;
-	font-size: 12px;
+.object-image-description {
+	border-top: solid 1px brown;
+	text-align: center;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
 	#header-logo {
 		max-width: 100%
 	}
+
+	.object-image-and-description {
+		float: none;
+		width: auto;
+	}
+}
+
+input[type=text],
+input[type=password] {
+	border: solid 1px #ccc;
+	background-color: #300;
+}
+
+input[type=text]:active,
+input[type=password]:active {
+	border: solid 1px white;
+	background-color: #300;
+}
+
+input[type=text]:hover,
+input[type=password]:hover {
+	border: solid 1px #ccc;
+	background-color: #300;
 }
